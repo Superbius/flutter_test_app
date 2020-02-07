@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'borders.dart';
 import 'text.dart';
+import 'listTest.dart';
+import 'svgTest.dart';
 
 class DrawerMain extends StatefulWidget {
   DrawerMain ({Key key, this.selected}) : super(key: key);
@@ -56,7 +58,31 @@ class DrawerMainState extends State<DrawerMain> {
                     MaterialPageRoute(builder: (context) => TextTest()),
                   );
                 },
-              )
+              ),
+              ListTile(
+                selected: widget.selected == 'list',
+                leading: Icon(Icons.blur_circular),
+                title: Text('List test'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ListTest())
+                  );
+                },
+              ),
+              ListTile(
+                selected: widget.selected == 'borders',
+                leading: Icon(Icons.blur_circular),
+                title: Text('Borders and shadow'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SvgTest())
+                  );
+                },
+              ),
             ]
         )
     );
