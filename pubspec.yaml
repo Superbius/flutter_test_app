@@ -26,7 +26,7 @@ dependencies:
 
   # My custom dependecies
   url_launcher: ^3.0.1
-  flutter_lottie: ^0.2.0
+  lottie: ^0.2.0
   liquid_swipe: ^1.3.0
   flutter_svg: ^0.17.0
   http: any

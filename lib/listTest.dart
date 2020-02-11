@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_lottie/flutter_lottie.dart';
+import 'package:lottie/lottie.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class ListTest extends StatefulWidget {
@@ -240,10 +240,8 @@ Widget _lottieList() {
                         SizedBox(
                           height: 30,
                           width: 30,
-                          child: LottieView.fromFile(
-                            filePath: "assets/images/circles.json",
-                            autoPlay: true,
-                            loop: true,
+                          child: Lottie.asset(
+                            "assets/images/circles.json",
                           ),
                         ),
 
@@ -283,46 +281,36 @@ Widget _manyLottieList() {
                         SizedBox(
                           height: 30,
                           width: 30,
-                          child: LottieView.fromFile(
-                            filePath: "assets/images/circles.json",
-                            autoPlay: true,
-                            loop: true,
+                          child: Lottie.asset(
+                            "assets/images/circles.json",
                           ),
                         ),
                         SizedBox(
                           height: 30,
                           width: 30,
-                          child: LottieView.fromFile(
-                            filePath: "assets/images/highScoreStamp.json",
-                            autoPlay: true,
-                            loop: true,
+                          child: Lottie.asset(
+                            "assets/images/highScoreStamp.json",
                           ),
                         ),
                         SizedBox(
                           height: 30,
                           width: 30,
-                          child: LottieView.fromFile(
-                            filePath: "assets/images/particles.json",
-                            autoPlay: true,
-                            loop: true,
+                          child: Lottie.asset(
+                            "assets/images/particles.json",
                           ),
                         ),
                         SizedBox(
                           height: 30,
                           width: 30,
-                          child: LottieView.fromFile(
-                            filePath: "assets/images/scoreProgress.json",
-                            autoPlay: true,
-                            loop: true,
+                          child: Lottie.asset(
+                            "assets/images/scoreProgress.json",
                           ),
                         ),
                         SizedBox(
                           height: 30,
                           width: 30,
-                          child: LottieView.fromFile(
-                            filePath: "assets/images/starBig.json",
-                            autoPlay: true,
-                            loop: true,
+                          child: Lottie.asset(
+                            "assets/images/starBig.json",
                           ),
                         ),
                       ]

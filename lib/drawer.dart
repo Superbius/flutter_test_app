@@ -72,9 +72,9 @@ class DrawerMainState extends State<DrawerMain> {
                 },
               ),
               ListTile(
-                selected: widget.selected == 'borders',
+                selected: widget.selected == 'svgAndottie',
                 leading: Icon(Icons.blur_circular),
-                title: Text('Borders and shadow'),
+                title: Text('Svg and lottie tests'),
                 onTap: () {
                   Navigator.pop(context);
                   Navigator.push(
