@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'drawer.dart';
 
 class SvgTest extends StatelessWidget {
   @override
@@ -7,6 +8,7 @@ class SvgTest extends StatelessWidget {
       appBar: AppBar(
         title: Text('Svg and Lottie test'),
       ),
+      drawer: DrawerMain(selected: "svgAndottie",),
       body: ColorFiltered(
         colorFilter: ColorFilter.matrix(<double>[
           0.2126, 0.7152, 0.0722, 0, 0,

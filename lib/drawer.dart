@@ -1,9 +1,11 @@
 
 import 'package:flutter/material.dart';
 import 'borders.dart';
+import 'animation.dart';
 import 'text.dart';
 import 'listTest.dart';
 import 'svgTest.dart';
+import 'lessonOutro.dart';
 
 class DrawerMain extends StatefulWidget {
   DrawerMain ({Key key, this.selected}) : super(key: key);
@@ -34,6 +36,18 @@ class DrawerMainState extends State<DrawerMain> {
                 decoration: BoxDecoration(
                   color: Colors.yellow,
                 ),
+              ),
+              ListTile(
+                selected: widget.selected == 'main',
+                leading: Icon(Icons.blur_circular),
+                title: Text('Lesson Outro'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LessonOutro())
+                  );
+                },
               ),
               ListTile(
                 selected: widget.selected == 'borders',
@@ -72,7 +86,7 @@ class DrawerMainState extends State<DrawerMain> {
                 },
               ),
               ListTile(
-                selected: widget.selected == 'svgAndottie',
+                selected: widget.selected == 'svgAndLottie',
                 leading: Icon(Icons.blur_circular),
                 title: Text('Svg and lottie tests'),
                 onTap: () {
@@ -80,6 +94,18 @@ class DrawerMainState extends State<DrawerMain> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => SvgTest())
+                  );
+                },
+              ),
+              ListTile(
+                selected: widget.selected == 'animation',
+                leading: Icon(Icons.blur_circular),
+                title: Text('Animation test'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AnimationTestPage())
                   );
                 },
               ),

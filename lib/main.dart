@@ -13,12 +13,15 @@ class MyApp extends StatelessWidget {
         // ...
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
         appBar: AppBar(
           title: Text('Test app'),
       ),
       drawer: DrawerMain(selected: "borders"),
-      body: Center(child: Text("Select test in dropdown menu"))
+      body: Center(
+        child: Text('asd'),
+      )
         )
       );
   }

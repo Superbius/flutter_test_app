@@ -33,6 +33,7 @@ dependencies:
   flutter_html: ^0.11.1
   font_awesome_flutter: ^8.2.0
   carousel_slider: ^1.3.0
+  flare_flutter: ^1.8.3
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +68,10 @@ flutter:
     - assets/images/acCreditIcon.svg
     - assets/images/acOfficeIcon.svg
     - assets/images/activityHistoryIcon.svg
+    - assets/images/largeTriang2.flr
+    - assets/images/largeTriang.flr
+    - assets/images/pointCoin.flr
+    - assets/images/ranking.flr
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 

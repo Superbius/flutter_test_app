@@ -1,33 +1,26 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_lottie (0.0.1):
+  - liquid_swipe (0.0.1):
     - Flutter
-    - lottie-ios
-  - lottie-ios (2.5.3)
   - url_launcher (0.0.1):
     - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - flutter_lottie (from `.symlinks/plugins/flutter_lottie/ios`)
+  - liquid_swipe (from `.symlinks/plugins/liquid_swipe/ios`)
   - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
-
-SPEC REPOS:
-  trunk:
-    - lottie-ios
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  flutter_lottie:
-    :path: ".symlinks/plugins/flutter_lottie/ios"
+  liquid_swipe:
+    :path: ".symlinks/plugins/liquid_swipe/ios"
   url_launcher:
     :path: ".symlinks/plugins/url_launcher/ios"
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_lottie: c1fd7e92e771209f8b623119646c15201c5e8c87
-  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  liquid_swipe: d3dbe523989a927528e7e7d2d0fc674da90cbbf7
   url_launcher: 0067ddb8f10d36786672aa0722a21717dba3a298
 
 PODFILE CHECKSUM: 1b66dae606f75376c5f2135a8290850eeb09ae83
